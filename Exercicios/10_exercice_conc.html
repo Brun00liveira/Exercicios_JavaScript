@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>No HTML Crie:</h1>
+        <h3>Alert com a soma de nome e sobrenome<h3><br/><br/>
+    <label>NOME:</label><br/>
+    <input type="text" id="nome" placeholder="digite o seu nome"/>
+    <br/>
+    <br/>
+    <label>SOBRENOME:</label><br/>
+    <input type="text" id="sobrenome" placeholder="digite o seu sobrenome"/>
+    <br/><br/>
+    <button type="button" id="botao">Click here!</button>
+
+    <script>
+        
+        document.getElementById('botao').addEventListener('click',soma)
+        function soma(){
+            const x = document.getElementById('nome').value
+            const y = document.getElementById('sobrenome').value
+            alert(x + ' ' + y)
+        }
+    </script>
+</body>
+</html>

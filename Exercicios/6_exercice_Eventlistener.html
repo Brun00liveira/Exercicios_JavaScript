@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <h1>No HTML Crie:</h1>
+            <h3>Um Botão com que retorne a ação realizada: onclick,onmouseout e onmouseon->  <h3>
+    <button type="button" id="but">Exibir</button>
+    <p id="clicou"></p>
+
+
+    <script>
+        document.getElementById("but").addEventListener('click', clicou)
+        document.getElementById("but").addEventListener('mouseover', passouMouse )
+        document.getElementById("but").addEventListener('mouseout', tirouMouse)
+        
+        
+        function clicou(){
+            document.getElementById("clicou").innerHTML += "Clicou<br/>"
+        };
+
+        function passouMouse(){
+            document.getElementById("clicou").innerHTML += "Passou o mouse<br/>"
+        }
+
+        function tirouMouse(){
+            document.getElementById("clicou").innerHTML += "tirou o mouse<br/>"
+        }
+    </script>
+
+</body>
+</html>

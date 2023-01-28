@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <h1>No HTML Crie:</h1>
+        <h3>exiba a quantidade de letras que possuem o texto inserido ao clicar no botão <h3>
+        <input type="text" id="number"/>       
+        <button type="button" id="but">Exibir</button>
+        <p id="oi"></p>
+    
+    <script>
+        document.getElementById('but').addEventListener('click', function(){
+            const x = document.getElementById("number").value
+            document.getElementById('oi').innerHTML += x.length + '<br/>'
+        })
+    </script>
+
+</body>
+</html>
